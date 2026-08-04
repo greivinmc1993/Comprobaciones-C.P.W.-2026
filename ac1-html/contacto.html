@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Letras Abiertas(biblioteca comunitaria) ">
+    <meta name="keywords" content="biblioteca, libros, lectura, comunidad">
+    <meta name="author" content="Greivin Montero Contretras">
+    <title>Contacto|Letras Abiertas(biblioteca comunitaria).</title>
+    <link rel="icon" href="recursos/favicon.png" type="image/png">
+</head>
+<body>
+
+<!-- Encabezado del sitio web -->
+    <header id="header">
+        <h1>Letras Abiertas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Contenido del formulario de contacto del sitio web -->
+    <main>
+        <section id="contacto">
+            <h2>Formulario de Reserva de Libros</h2>
+            <p>Completa el formulario para reservar un libro de nuestra colección.</p>
+
+            <form action="#" method="POST">
+
+                <fieldset>
+                    <legend>Información de Contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo" minlength="3" maxlength="50">
+
+                    <br><br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido" minlength="2" maxlength="50">
+
+                    <br><br>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Ingrese su email">
+
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Debe ingresar exactamente 8 dígitos, sin espacios ni guiones." required placeholder="Ingrese su número de teléfono">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalles de la Reserva</legend>
+
+                    <label for="libro">Libro a reservar:</label>
+                    <input type="text" id="libro" name="libro" required placeholder="Ingrese el título del libro" minlength="1" maxlength="100">
+
+                    <br><br>
+
+                    <label for="fecha">Fecha de reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <br><br>
+
+                    <label for="hora">Hora de reserva:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <br><br>
+
+                    <label for="terminos">Acepto los términos y condiciones en caso de daño o perdida de los libros</label>
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                </fieldset>
+
+                <br>
+
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="400" placeholder="Escribe aquí hasta 400 caracteres..."></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Sección de noticias -->
+    <aside id="noticias">
+        <h3>Noticias</h3>
+        <p>¡Nuevos libros llegaron a la biblioteca!</p>
+    </aside>
+
+    <footer id="footer">
+        <p>&copy; 2026 Letras Abiertas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
