@@ -6,14 +6,16 @@
     --color-marca: ; /*  */
     --color-acento: ; /*  */
     --color-acento-osc: ; /* */
-    --color-fondo: ; /* */
+    --color-fondo: linear-gradient(135deg, #5a2024, #a64943); /* */
     --color-fondo-alt: ; /* */
     --color-linea: ; /* */
     --color-blanco: ; /* */
+    --fondo: radial-gradient(circle at 80% 25%, rgba(197, 139, 80, 0.55), transparent 27%), radial-gradient(circle at 20% 80%, rgba(49, 92, 74, 0.55), transparent 30%), linear-gradient(120deg, rgb(53, 28, 29), rgb(104, 40, 40) 48%, rgb(49, 92, 74));
+    --fondo-2: linear-gradient(rgba(53, 28, 29, 0.9), rgba(53, 28, 29, 0.9)), radial-gradient(circle, #a85c4d, #351c1d);
 
 /* FUENTES Y TITULOS */
-    --fuente-titulo: Georgia, serif;
-    --fuente-texto: 'Segoe UI', Arial, sans-serif;
+    --fuente-titulo: Georgia, "Times New Roman", serif;
+    --fuente-texto: "Trebuchet MS", Arial, sans-serif;
 
 /* ESPACIADO CONVERSION 1REM=10PX*/
     --esp-xs: 0.8rem;
