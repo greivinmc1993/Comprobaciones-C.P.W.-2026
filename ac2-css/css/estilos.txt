@@ -150,6 +150,15 @@ header {
     outline-offset: 0.2rem;
 }
 
+input:focus:invalid:not(:placeholder-shown){
+    background-color: rgba(250, 171, 171, 0.363);
+    color: white;
+}
+
+input:focus:valid:not(:placeholder-shown){
+    background-color: rgb(190, 250, 190);
+}
+
 @keyframes resaltar{
     0%{
         transform: translateY(0px) ;
