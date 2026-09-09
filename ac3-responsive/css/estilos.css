@@ -112,7 +112,7 @@ img {
 }
 
 .pagina-encabezado {
-  width: 1180px;
+  max-width: 43rem;
   margin: 0 auto;
   padding: 80px 30px 48px;
   text-align: center;
@@ -351,16 +351,17 @@ img {
 
 /* ─── ÍNDICE INTERNO ─────────────────────────────────────────────────── */
 .indice {
-  width: 1180px;
-  margin: 0 auto 20px;
+  max-width: 43rem;
+  margin: 0 auto;
   padding: 0 30px;
+  text-align: center;
 }
 
-.indice-titulo { font-size: 19px; margin-bottom: 8px; }
+.indice-titulo { font-size: 1.9rem; margin-bottom: 0.8rem; }
 
 .indice-lista {
   display: flex;
-  gap: 26px;
+  gap: 2.6rem;
   list-style: none;
 }
 
@@ -372,13 +373,12 @@ img {
 
 /* ─── TABLA ──────────────────────────────────────────────────────────── */
 .tabla {
-  width: 100%;
+  width: 40rem;
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
-  overflow: hidden;
+  overflow-y: scroll;
   box-shadow: var(--sombra);
-  overflow: scroll;
 }
 
 .tabla-titulo {
@@ -489,8 +489,8 @@ img {
 .grupo {
   border: 1px solid var(--linea);
   border-radius: var(--radio);
-  padding: 26px;
-  margin-bottom: 26px;
+  padding: 2.6rem;
+  margin-bottom: 2.6rem;
   background-color: var(--blanco);
 }
 
@@ -498,31 +498,31 @@ img {
   font-family: var(--fuente-titulo);
   font-weight: 700;
   color: var(--verde);
-  padding: 0 8px;
-  font-size: 19px;
+  padding: 0 0.8rem;
+  font-size: 1.9rem;
 }
 
 .grupo-opciones {
   border: none;
-  padding: 14px 0 0;
+  padding: 1.4rem 0 0;
   margin-bottom: 0;
 }
 
-.campo { margin-bottom: 18px; }
+.campo { margin-bottom: 1.8rem; }
 
 .campo-etiqueta {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .campo-entrada {
   width: 100%;
-  padding: 11px 15px;
+  padding: 1.1rem 1.5rem;
   border: 1px solid var(--linea);
   border-radius: var(--radio);
-  font-size: 17px;
+  font-size: 1.7rem;
   font-family: inherit;
   background-color: var(--crema);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -536,21 +536,21 @@ img {
 
 .campo-ayuda {
   display: block;
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
   color: var(--suave);
 }
 
 .opcion {
-  margin-bottom: 9px;
+  margin-bottom: 0.9rem;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 0.9rem;
 }
 
 .opcion-marca {
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   accent-color: var(--terracota);
   cursor: pointer;
 }
@@ -559,7 +559,7 @@ img {
 
 .fila-botones {
   display: flex;
-  gap: 14px;
+  gap: 1.4rem;
   justify-content: flex-end;
   margin-bottom: 0;
 }
@@ -568,11 +568,11 @@ img {
 /* ─── BOTONES ────────────────────────────────────────────────────────── */
 .boton {
   display: inline-block;
-  padding: 13px 28px;
+  padding: 1.3rem 2.8rem;
   border: none;
   border-radius: var(--radio);
   font-family: inherit;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.25s ease, transform 0.25s ease;
