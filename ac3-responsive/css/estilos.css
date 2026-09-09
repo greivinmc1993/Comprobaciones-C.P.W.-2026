@@ -300,11 +300,12 @@ img {
   border-radius: var(--radio);
   box-shadow: var(--sombra);
   background-color: var(--crema-alt);
+  height: 40rem;
 }
 
 .pieza img {
   width: 100%;
-  height: 240px;
+  height: auto;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -654,4 +655,52 @@ img {
   font-size: 1.6rem;
   opacity: 0.72;
   margin-bottom: 0;
+}
+
+@media (width <= 1023px ) and (width >= 431px) {
+  h1 { font-size: 5.2rem; 
+  }
+
+  h2 { font-size: 3.4rem; 
+  }
+
+  h3 { font-size: 2.2rem; 
+  }
+
+  .marca-texto {
+  font-family: var(--fuente-titulo);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main{
+  max-width: 100rem;
+}
+
+.portada-caja{
+  max-width: 60%;
+}
+
+.portada-titulo{
+  font-size: 3.2rem;
+}
+
+.seccion{
+  max-width: 100rem;
+  
+  
+}
+
+.tarjeta{
+  width: 100%;
+}
+
+.tarjeta:last-child{
+  margin: 0 auto;
+}
+
+.fila-propuestas{
+  justify-content: center;
+}
+
 }
